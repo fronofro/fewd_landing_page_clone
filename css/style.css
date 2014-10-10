@@ -22,6 +22,10 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: 'Roboto', sans-serif; 
+	font-size: 16px; 
+	color: #838994; 
+	letter-spacing: 0.03em;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -52,20 +56,52 @@ body {
 div {
     border: 1px solid Chocolate;
 }
+textarea { 
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  	box-sizing: border-box;         /* Opera/IE 8+ */
+  
+}
+
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
 
 /* Navigation Section */
 .top-navigation {
     background-color: #fff;
 }
 .top-navigation > .content {
-    width: 970px;
+    max-width: 970px;
     height: 70px;
     margin: 0 auto;
+    padding: 0px 15px;
 }
 .logo {
-	margin-left: 14px;
 	height: 70px;
 }
+.links {
+	float: right;
+	margin-top: 25px;
+}
 
+.links > li {
+		display: inline-block;
+		margin-left: 15px;
+}
 
+.links > li > a {
+	text-decoration: none;
+	transition: color 0.5s ease;
+}
 
+.top-navigation .links > .active {
+    color: #4c5058;
+    font-weight: 600;
+}
+
+.links > li > a:hover {
+	cursor: hand;
+	color: red;
+}
