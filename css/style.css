@@ -71,6 +71,7 @@ html {
 /* Navigation Section */
 .top-navigation {
     background-color: #fff;
+    position: fixed
 }
 .top-navigation > .content {
     max-width: 970px;
@@ -188,3 +189,20 @@ margin-left: -1.625rem;
 animation: bounce 1.2s ease-in-out infinite alternate;
 }
 
+.cases h2 {
+	text-align: center;
+	font-size: 2.75rem;
+	margin: 1.625rem 0 3.125rem;
+	font-weight: 300;
+	color: white;
+}
+
+.cases .devices {
+    width: 33.3333333%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    /* styles to assist with debugging */
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 4em;
+}
